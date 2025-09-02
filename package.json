@@ -1,0 +1,23 @@
+{
+  "name": "chatpad-app",
+  "version": "1.0.0",
+  "description": "A simple chatpad application with React frontend and Express backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "chat",
+    "openai",
+    "react",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
